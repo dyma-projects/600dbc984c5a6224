@@ -1,9 +1,9 @@
 <br />
-<span> valeur du compteur : </span>
+<span> valeur du compteur : {{ compteur }}</span>
 <br />
 <br />
-<button> + </button>
+<button data-value="increment" (click)="changeCompteurValue($event)">+</button>
 <br />
 <br />
-<button> - </button>
-<br>
+<button data-value="decrement" (click)="changeCompteurValue($event)">-</button>
+<br />
